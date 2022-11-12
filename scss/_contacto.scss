@@ -1,0 +1,31 @@
+/*estilo contacto */
+.contacto {
+    h2{
+    text-align: center;}
+}
+
+
+.contacto_img {
+    img{
+    width: 10vh;
+    height: 10vh;
+    align-items: center;}
+    
+}
+
+.container_contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+
+.contacto_dato {
+    align-self:center;
+    align-items: center;
+    
+}
+
+.lead{
+    font-family: $text-font;
+}
+

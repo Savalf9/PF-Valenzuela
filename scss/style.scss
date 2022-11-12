@@ -1,0 +1,184 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+@import 'header';
+@import 'components';
+@import 'nosotros';
+@import 'galeria';
+@import 'servicios';
+@import 'contacto';
+
+$text-font: 'Roboto', sans-serif;
+$design-color:#f7c325;
+
+@mixin titulo-banner{
+	color: white;
+    font-weight: 700;
+}
+
+
+
+/*estilo index*/
+
+.banner {
+    height: 80vh;
+    background-image:url(../img/cute-beagle-wearing-yellow-bow-time.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+
+    .texto_banner {
+        grid-column:7/10;
+        grid-row: 2/7;
+
+        h2{
+            @include titulo-banner;
+            font-size: 60px;
+            font-family: $text-font;
+        }
+
+    }
+
+
+}
+
+
+
+
+/*estilo footer*/
+
+footer{
+    padding-top: 10px;
+
+    img{
+        width:40px;
+    }
+}
+
+
+/*media query*/
+
+@media only screen and (max-width: 500px){
+    .banner {
+    background-image:url(../img/cute-beagle-wearing-yellow-bow-time-responsive.jpg);
+    background-repeat: no-repeat;
+
+    .texto_banner {
+        grid-column:2/9;
+        grid-row: 2/9;
+            h2{
+                @include titulo-banner;
+                font-size: 30px;
+                font-family: $text-font;
+            }
+        }
+        .botones {
+            margin-top: 20px;
+            padding: 0.7em 1.7em;
+            font-size: 10px;
+                    
+        }
+    }
+
+
+    
+
+    #nosotros_img {
+        grid-column:2/8;
+        
+    }
+
+    #nosotros_texto {
+        grid-column:2/10;
+        grid-row:6;
+    }
+
+    #preguntas_texto {
+        grid-column:2/9;
+        grid-row: 2;
+        
+    }
+
+    .listado_preguntas {
+        grid-column:2/10;
+        grid-row:4;
+    }
+
+}  
+
+
+@media only screen and (min-width: 500px) and (max-width: 700px){
+    .banner {
+        background-image:url(../img/cute-beagle-wearing-yellow-bow-time-responsive.jpg);
+        background-repeat: no-repeat;
+
+        .texto_banner {
+        grid-column:7/10;
+        grid-row: 2/9;
+            h2{
+            @include titulo-banner;
+            font-size: 35px;
+            font-family: $text-font;
+            }
+        }
+
+        .botones {
+            margin-top: 20px;
+            padding: 0.7em 1.7em;
+            font-size: 15px;
+                    
+        }
+    }
+
+    #nosotros_img {
+        grid-column:2/8;   
+    }
+
+    #nosotros_texto {
+        grid-column:2/10;
+        grid-row:6;
+    }
+
+    #preguntas_texto {
+        grid-column:2/9;
+        grid-row: 2;
+        
+    }
+
+    .listado_preguntas {
+        grid-column:2/10;
+        grid-row:4;
+    }
+}  
+
+@media only screen and (min-width: 700px) and (max-width: 950px){
+    .banner {
+    background-image:url(../img/cute-beagle-wearing-yellow-bow-time-responsive.jpg);    
+
+        .texto_banner {
+        grid-column:7/10;
+        grid-row: 2/9;
+            h2{
+            @include titulo-banner;
+            font-size: 45px;
+            font-family: $text-font;
+            }
+        }
+        .botones {
+            margin-top: 20px;
+            padding: 0.7em 1.7em;
+            font-size: 15px;
+                    
+        }    
+    }
+
+
+    #nosotros_texto {
+        grid-row:1/4;
+    }
+} 

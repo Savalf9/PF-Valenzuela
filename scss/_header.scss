@@ -1,0 +1,37 @@
+/*estilo header*/
+
+$text-font: 'Roboto', sans-serif;
+
+header{
+    
+    overflow: hidden;
+}
+
+
+.navbar-brand {
+color: #000000;
+font-weight: 800;
+font-size: 28px;
+font-family: $text-font;
+
+    img{
+    padding:10px;
+    width: 90px;
+    display: inline;}
+    
+}
+
+#ftco-navbar{
+    background-color: #f7f9fa;
+
+}
+
+
+
+.nav-item {
+    a {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: $text-font;}
+    
+}

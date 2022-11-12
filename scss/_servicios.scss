@@ -1,0 +1,62 @@
+
+/*estilo servicios*/
+
+.ftco-section {
+    padding: 2em 0;
+    position: relative;
+}
+
+.block-7  {
+    background-color: #f7f9fa;
+
+    .img {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .excerpt {
+        margin-bottom: 0px;
+        color: $design-color;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .price {
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        sup {
+            font-size: 24px;
+            top: -1em;
+            color: #b3b3b3;
+        }
+
+        .number {
+            font-size: 60px;
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+
+    .pricing-text {
+        
+        li:nth-child(odd) {
+        background: rgba(0, 0, 0, 0.05);}
+
+        li {
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: #000000;
+        }
+    }
+
+    ul {
+        margin-left: -20px;
+    }
+}
