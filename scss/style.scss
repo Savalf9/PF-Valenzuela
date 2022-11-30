@@ -10,6 +10,7 @@
 @import 'galeria';
 @import 'servicios';
 @import 'contacto';
+@import 'footer';
 
 $text-font: 'Roboto', sans-serif;
 $design-color:#f7c325;
@@ -48,17 +49,6 @@ $design-color:#f7c325;
 }
 
 
-
-
-/*estilo footer*/
-
-footer{
-    padding-top: 10px;
-
-    img{
-        width:40px;
-    }
-}
 
 
 /*media query*/
